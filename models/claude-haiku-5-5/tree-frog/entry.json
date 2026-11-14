@@ -1,0 +1,11 @@
+{
+  "animal": "tree-frog",
+  "title": "Tree Frog Jellies",
+  "model": "Claude Haiku 5.5",
+  "effort": "medium",
+  "harness": "Claude Code",
+  "date": "2026-11-13",
+  "skill": "0.1.0",
+  "prompt": "try to make any jelly animal- your choice haiku!",
+  "notes": "Its own pick of animal. Lime, pond and blue-dart frogs that hop in short bursts, leap with a full turn in the air, and eat flies that glow inside."
+}

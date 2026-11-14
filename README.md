@@ -30,6 +30,7 @@ index.html                  the gallery
 | (reference) | [red panda](reference/red-panda/) | | 0.1.0 |
 | Muse Wonder | [duck](models/muse-wonder/duck/) | high | 0.1.0 |
 | Grokbot | [lion](models/grokbot/lion/) | | 0.1.0 |
+| Claude Haiku 5.5 | [tree frog](models/claude-haiku-5-5/tree-frog/) | medium | 0.1.0 |
 
 ## adding one
 
