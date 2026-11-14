@@ -1,0 +1,6 @@
+node_modules/
+out/
+test/_sim.mjs
+test/_page.mjs
+test/shots/
+gif/frames/

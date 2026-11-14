@@ -1,0 +1,11 @@
+{
+  "animal": "red-panda",
+  "title": "Red Panda Jellies",
+  "model": null,
+  "effort": null,
+  "harness": null,
+  "date": "2026-11-10",
+  "skill": "0.1.0",
+  "prompt": null,
+  "notes": "The reference build: what the kit produces as shipped, and what every other animal started from."
+}
