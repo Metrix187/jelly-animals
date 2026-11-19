@@ -2,7 +2,7 @@
   "animal": "penguin",
   "title": "Penguin Jellies",
   "model": "hy3",
-  "effort": null,
+  "effort": "high",
   "harness": null,
   "date": "2026-11-19",
   "skill": "0.1.0",
