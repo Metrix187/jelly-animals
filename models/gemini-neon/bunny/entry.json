@@ -2,7 +2,7 @@
   "animal": "bunny",
   "title": "Jelly Bunnies",
   "model": "Gemini Neon",
-  "effort": null,
+  "effort": "high",
   "harness": "Cursor",
   "date": "2026-11-19",
   "skill": "0.1.0",
