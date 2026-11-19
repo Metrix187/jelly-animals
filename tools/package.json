@@ -1,0 +1,9 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "gifsicle": "^7.0.1",
+    "playwright": "1.65.0",
+    "three": "0.170.0"
+  }
+}

@@ -40,7 +40,8 @@ const card = e => {
 };
 
 const repo = 'Metrix187/jelly-animals';
-const total = groups.reduce((n, g) => n + (g.name === 'Reference' ? 0 : g.entries.length), 0);
+const total = groups.reduce((n, g) => n + g.entries.length, 0);      // every card on the page, the reference included
+const plural = (n, word) => `${n} ${word}${n === 1 ? '' : 's'}`;
 const html = `<!doctype html>
 <html lang="en">
 <head>
@@ -84,7 +85,7 @@ const html = `<!doctype html>
   <header>
     <div class="kicker">Material Studies / one skill, many hands</div>
     <h1>Jelly Animals.</h1>
-    <p class="lede">Every model gets the same skill and the same engine, and is asked for an animal. ${total} so far, filed by who made them.</p>
+    <p class="lede">Every model gets the same skill and the same engine, and is asked for an animal. ${plural(total, 'animal')} so far, filed by who made them.</p>
   </header>
 ${groups.map(g => `  <section>
     <h2>${esc(g.name)}</h2>

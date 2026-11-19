@@ -17,8 +17,10 @@ models/
     <animal>/
       index.html            the page, as delivered
       entry.json            who made it and how
-      preview.gif|png|jpg   optional, for the gallery card
+      preview.gif           the gallery card, filmed by tools/gif.mjs
+      reel.json             the staging that GIF was filmed with
       src/                  optional, the kit sources as the model left them
+tools/gif.mjs               films an entry's page into its preview.gif
 gallery.mjs                 rebuilds index.html from every entry.json
 index.html                  the gallery
 ```
@@ -37,8 +39,9 @@ index.html                  the gallery
 
 1. Give the model the skill folder and ask for an animal. One request, no steering afterwards; if you did steer, say so in `notes`.
 2. Have it build with `node build.mjs <animal>-jellies --full`, which writes a whole document that opens from disk.
-3. Copy `out/<animal>-jellies.full.html` to `models/<model>/<animal>/index.html`, the model's `src/` next to it, and a screenshot or GIF as `preview.*`.
-4. Write `entry.json`:
+3. Copy `out/<animal>-jellies.full.html` to `models/<model>/<animal>/index.html`, and the model's `src/` next to it.
+4. Film its card: `node tools/gif.mjs models/<model>/<animal>` (see below).
+5. Write `entry.json`:
 
    ```json
    {
@@ -55,9 +58,25 @@ index.html                  the gallery
    ```
 
    `harness` is what ran the model (Claude Code, OpenCode, a chat app). `prompt` is the request, word for word. Leave a field `null` when it is not known; do not guess.
-5. `node gallery.mjs`, add a row to the table above, commit.
+6. `node gallery.mjs`, add a row to the table above, commit.
 
 Do not fix a model's page by hand. A broken marking or an animal that falls over is part of the result.
+
+## the GIFs
+
+Every card is the same nine-second reel, so the animals can be compared like with like: they hop toward the camera, strike their pose, get a treat each, the lights go out, and they cross the table with lit stomachs.
+
+```
+cd tools && npm i                         # once; also needs ffmpeg on the PATH
+node tools/gif.mjs models/grokbot/lion    # one entry
+node tools/gif.mjs --missing              # every entry without a preview.gif
+```
+
+Add `--dry` to stop after four key frames (in `tools/.work/`), or `--rehearse` to pick the staging again.
+
+The simulation is chaotic, so a staging that suits one animal tips another over. The tool first runs a few stagings without drawing, a few seconds each, and scores them: is everyone on its feet, in the picture, fed, and side-on once it is dark. It films the best one with the page's clock stood still, encodes it at 720×540 under 5 MB, and writes the staging to the entry's `reel.json`, so the same command films the same reel again. The reel and its beats come from the skill's own `kit/gif/capture.mjs`.
+
+A model's own GIF, when it made one, stays as it is: the tool only films entries you point it at, and `--missing` skips any entry that already has a `preview.gif`.
 
 ## credit
 
