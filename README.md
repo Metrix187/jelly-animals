@@ -40,6 +40,7 @@ index.html                  the gallery
 | iceman contributor free | [capybara](models/iceman-contributor-free/capybara/) | | 0.1.0 |
 | tidepool alpha free | [sea turtle](models/tidepool-alpha-free/sea-turtle/) | high | 0.1.0 |
 | Qwen 4 Max | [bunny](models/qwen-4-max/bunny/) | high | 0.1.0 |
+| GPT 6.2 Sol | [bunny](models/gpt-6-2-sol/bunny/) | high | 0.1.0 |
 
 ## adding one
 
