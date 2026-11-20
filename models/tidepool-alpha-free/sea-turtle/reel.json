@@ -1,0 +1,16 @@
+{
+  "stage": {
+    "lane": [
+      0.3,
+      0.72,
+      1
+    ],
+    "go": [
+      1.4,
+      1,
+      0.2
+    ],
+    "turn": 0.03
+  },
+  "reel": "on its feet 100% · in the picture 100% · fed 67% · side-on in the dark 0.49 · least up 0.70 · widest 1.33"
+}
