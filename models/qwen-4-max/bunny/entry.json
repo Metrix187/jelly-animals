@@ -1,0 +1,11 @@
+{
+  "animal": "bunny",
+  "title": "Bunny Jellies",
+  "model": "Qwen 4 Max",
+  "effort": "high",
+  "harness": "OpenCode",
+  "date": "2026-11-19",
+  "skill": "0.1.0",
+  "prompt": null,
+  "notes": "Clear cinnamon. Their move is the binky, a twisting leap for joy, and they eat carrot coins that glow inside."
+}
