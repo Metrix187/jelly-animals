@@ -39,6 +39,7 @@ index.html                  the gallery
 | Claude Fable 5.2 | [axolotl](models/claude-fable-5-2/axolotl/) | high | 0.1.0 |
 | iceman contributor free | [capybara](models/iceman-contributor-free/capybara/) | | 0.1.0 |
 | tidepool alpha free | [sea turtle](models/tidepool-alpha-free/sea-turtle/) | high | 0.1.0 |
+| Qwen 4 Max | [bunny](models/qwen-4-max/bunny/) | high | 0.1.0 |
 
 ## adding one
 
