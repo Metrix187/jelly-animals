@@ -37,7 +37,7 @@ index.html                  the gallery
 | hy3 | [penguin](models/hy3/penguin/) | high | 0.1.0 |
 | Gemini Neon | [bunny](models/gemini-neon/bunny/) | high | 0.1.0 |
 | Claude Fable 5.2 | [axolotl](models/claude-fable-5-2/axolotl/) | high | 0.1.0 |
-| iceman contributor 3 | [capybara](models/iceman-contributor-3/capybara/) | | 0.1.0 |
+| iceman contributor free | [capybara](models/iceman-contributor-free/capybara/) | | 0.1.0 |
 
 ## adding one
 
