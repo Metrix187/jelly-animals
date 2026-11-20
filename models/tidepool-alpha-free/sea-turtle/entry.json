@@ -1,0 +1,11 @@
+{
+  "animal": "sea turtle",
+  "title": "Sea Turtle Jellies",
+  "model": "tidepool alpha free",
+  "effort": "high",
+  "harness": null,
+  "date": "2026-11-19",
+  "skill": "0.1.0",
+  "prompt": null,
+  "notes": "They stand up on their shells to look over them, and eat berries that glow inside. Delivered as the kit's plain build; index.html is the same sources built with --full."
+}
